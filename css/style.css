@@ -370,7 +370,7 @@ button {
 
     /* Estilos para el iframe del video (NUEVOS) */
     .video-meditacion iframe {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     
