@@ -1,0 +1,12 @@
+# Ignorar archivos del sistema operativo Windows
+Thumbs.db
+desktop.ini
+
+# Ignorar la carpeta de configuración de VS Code
+.vscode/
+
+# Ignorar la carpeta de dependencias de Node
+node_modules/
+
+# Archivos de logs
+*.log
