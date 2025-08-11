@@ -322,3 +322,107 @@ button {
   margin-bottom: 20px;
 }
 
+
+
+/*
+  ====================================
+  ESTILOS RESPONSIVE (MEDIA QUERIES)
+  ====================================
+*/
+
+/* Para pantallas de 768px o menos (tablets y móviles) */
+@media (max-width: 768px) {
+    .container-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista li {
+        padding: 5px 0;
+    }
+
+    .container-description,
+    .hero-textoizquierda,
+    .blog-intro,
+    .link-inspiracion,
+    .sobre-nosotros,
+    form {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 1rem;
+    }
+
+  
+    .grid-inspiracion,
+    .blog-posts {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .div-redes {
+        padding-bottom: 10px;
+    }
+    .menu-pie .lista {
+        flex-direction: column;
+    }
+}
+
+
+/*
+  ====================================
+  ESTILOS DEL MENÚ HAMBURGUESA
+  ====================================
+*/
+
+/* Oculta el checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilo para el ícono de hamburguesa */
+.hamburguesa {
+    display: none; 
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#menu-toggle:checked ~ .menu-nav .lista {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Muestra el ícono de hamburguesa */
+    .hamburguesa {
+        display: block;
+    }
+    
+   
+    .menu-nav .lista {
+        display: none;
+    }
+    
+   
+    .container-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
